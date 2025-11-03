@@ -3,8 +3,8 @@
 import { fetchNoteById } from '@/lib/api';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
-import Loading from '@/loading';
-import Error from './error';
+import Loading from '@/app/loading';
+import Error from './[id]/error';
 import css from './NoteDetails.module.css';
 
 const NoteDetailsClient = () => {

@@ -2,8 +2,8 @@
 
 import { getNotes } from '@/lib/api';
 import { useQuery } from '@tanstack/react-query';
-import Loading from '@/loading';
-import Error from './error';
+import Loading from '@/app/loading';
+import Error from './[id]/error';
 import NoteList from '@/components/NoteList/NoteList';
 import css from './Notes.client.module.css';
 import { useState } from 'react';
