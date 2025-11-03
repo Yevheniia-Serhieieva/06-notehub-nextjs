@@ -17,9 +17,9 @@ const NoteDetailsClient = () => {
     refetchOnMount: false,
   });
 
-  if (isLoading) return '/loading.tsx';
+  if (isLoading) return <p>Loading, please wait...</p>;
 
-  if (isError || !note) return '../error.tsx';
+  if (isError || !note) return <p>Something went wrong.</p>;
 
   const formattedDate = note.updatedAt
     ? `Updated at: ${note.updatedAt}`
