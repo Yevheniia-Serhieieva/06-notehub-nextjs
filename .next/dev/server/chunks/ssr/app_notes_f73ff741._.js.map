@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/notes/error.module.css [app-ssr] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"text\": \"error-module__1twf8q__text\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA"}},
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/%D0%90%D0%B4%D0%BC%D0%B8%D0%BD/Documents/GitHub/06-notehub-nextjs/app/notes/error.tsx"],"sourcesContent":["'use client';\r\n\r\nimport css from './error.module.css';\r\n\r\ntype Props = {\r\n  error?: Error;\r\n};\r\n\r\nconst Error = ({ error }: Props) => {\r\n  return (\r\n    <>\r\n      <p className={css.text}>Could not fetch the list of notes. {error?.message}</p>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default Error;\r\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAQA,MAAM,QAAQ,CAAC,EAAE,KAAK,EAAS;IAC7B,qBACE;kBACE,cAAA,8OAAC;YAAE,WAAW,4IAAG,CAAC,IAAI;;gBAAE;gBAAoC,OAAO;;;;;;;;AAGzE;uCAEe","debugId":null}}]
+}
