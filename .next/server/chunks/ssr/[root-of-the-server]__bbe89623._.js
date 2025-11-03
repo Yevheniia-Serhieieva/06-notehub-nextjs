@@ -1,0 +1,3 @@
+module.exports=[24361,(a,b,c)=>{b.exports=a.x("util",()=>require("util"))},14747,(a,b,c)=>{b.exports=a.x("path",()=>require("path"))},35112,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactDOM},35139,a=>{a.v({text:"error-module__0sjZ0W__text"})},89501,a=>{"use strict";var b=a.i(87924),c=a.i(35139);a.s(["default",0,({error:a})=>(0,b.jsx)(b.Fragment,{children:(0,b.jsxs)("p",{className:c.default.text,children:["Could not fetch the list of notes. ",a?.message]})})])}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__bbe89623._.js.map
