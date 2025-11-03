@@ -4,13 +4,13 @@ import { getNotes } from '@/lib/api';
 import { useQuery } from '@tanstack/react-query';
 import Loading from '@/loading';
 import Error from './error';
-import NoteList from '@/src/components/NoteList/NoteList';
+import NoteList from '@/components/NoteList/NoteList';
 import css from './Notes.client.module.css';
 import { useState } from 'react';
-import SearchBox from '@/src/components/SearchBox/SearchBox';
-import Pagination from '@/src/components/Pagination/Pagination';
-import Modal from '@/src/components/Modal/Modal';
-import NoteForm from '@/src/components/NoteForm/NoteForm';
+import SearchBox from '@/components/SearchBox/SearchBox';
+import Pagination from '@/components/Pagination/Pagination';
+import Modal from '@/components/Modal/Modal';
+import NoteForm from '@/components/NoteForm/NoteForm';
 
 const NotesClient = () => {
   const [currentPage, setCurrentPage] = useState(1);

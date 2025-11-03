@@ -1,4 +1,4 @@
-import { Note, NoteTag } from '@/src/types/note';
+import { Note, NoteTag } from '@/types/note';
 import axios from 'axios';
 
 interface NoteListResponse {
