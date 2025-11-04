@@ -21,9 +21,7 @@ const NoteDetailsClient = () => {
 
   if (isError || !note) return <p>Something went wrong.</p>;
 
-  const formattedDate = note.updatedAt
-    ? `Updated at: ${note.updatedAt}`
-    : `Created at: ${note.createdAt}`;
+  const formattedDate = note.createdAt;
 
   return (
     <div>

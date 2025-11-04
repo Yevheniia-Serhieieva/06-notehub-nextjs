@@ -4,8 +4,9 @@ import { fetchNoteById } from '@/lib/api';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import Loading from '@/app/loading';
-import Error from './[id]/error';
 import css from './NoteDetails.module.css';
+import ErrorNote from './error';
+import { error } from 'console';
 
 const NoteDetailsClient = () => {
   const { id } = useParams<{ id: string }>();
@@ -13,6 +14,7 @@ const NoteDetailsClient = () => {
     data: note,
     isLoading,
     isError,
+    error,
   } = useQuery({
     queryKey: ['note', id],
     queryFn: () => fetchNoteById(id),
@@ -20,7 +22,7 @@ const NoteDetailsClient = () => {
   });
 
   if (isLoading) return <Loading />;
-  if (isError || !note) return <Error />;
+  if (isError || !note) return <ErrorNote error={error as Error} />;
 
   return (
     <div className={css.container}>
